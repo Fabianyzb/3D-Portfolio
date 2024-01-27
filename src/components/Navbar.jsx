@@ -29,8 +29,11 @@ const Navbar = () => {
                     {/* No use tailwind ya que todavia no se por que no funcionaba. Era className = "w-0-9 h-9 object-contain" */}
                     <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
 
-                    <p className="text-white text-[18px] font-bold cursor-pointer">
-                        Fabian <span className="sm:block hidden">| Web Developer</span>
+                    <p className="text-white text-[18px] 
+                    font-bold cursor-pointer flex">
+                        {/* al lado del nombre, en vez de poner un espacio, usare un Unicode character: &nbsp(empty space) */}
+                        Fabian &nbsp;
+                        <span className="sm:block hidden">| Web Developer</span>
                     </p>
                 </Link>
                 <ul className="list-none hidden sm:flex flex-row gap-10">
