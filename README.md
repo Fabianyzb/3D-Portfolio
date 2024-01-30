@@ -9,3 +9,4 @@
 7. Si tailwind no esta funcionando con vite esta es la solucion: $ npm install --legacy-peer-deps -D postcss autoprefixer
 8. Luego de eso: $ npx tailwindcss init -p
 9. Para usar react three hay que instalar Three.js: npm install --legacy-peer-deps three
+10. Tuve que bajar de la version actual a la "three": "^0.149.0" para que las luces funcionaran
