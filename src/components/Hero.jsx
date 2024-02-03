@@ -22,9 +22,12 @@ const Hero = () => {
             </div>
             <ComputersCanvas />
 
-            <div className='absoute xs:bottom-10 bottom-32 w-full flex  justify-center items-center'>
+
+            {/* "Gif" de la pildora para hacer scrolldown */}
+            <div className='absoute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
                 <a href="#about">
-                    <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+                    <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary 
+                    flex justify-center items-start p-2'>
                         {/* Aqui se ocupa el framer-motion */}
                         <motion.div
                             animate={{
