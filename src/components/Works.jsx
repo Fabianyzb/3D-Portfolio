@@ -1,9 +1,16 @@
-import React from 'react'
+import Tilt from 'react-tilt'
+import { motion } from 'framer-motion'
+import { styles } from '../styles'
+import { SectionWrapper } from '../assets'
+import { projects } from '../constants'
+import { fadeIn, TextVariant } from '../utils/motion'
 
 const Works = () => {
   return (
-    <div>Works</div>
+    <>
+
+    </>
   )
 }
 
-export default Works
+export default SectionWrapper(Works, '')
