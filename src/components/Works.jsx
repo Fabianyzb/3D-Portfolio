@@ -5,6 +5,10 @@ import { SectionWrapper } from '../assets'
 import { projects } from '../constants'
 import { fadeIn, TextVariant } from '../utils/motion'
 
+const ProjectCard = () => {
+
+}
+
 const Works = () => {
   return (
     <>
@@ -29,7 +33,11 @@ const Works = () => {
 
       <div className='mt-20 flex flex-wrap gap-7'>
         {projects.map((project, index) =>
-          <ProjectCard key={``} />)}
+          /* hay que loop dentro de los projects */
+          <ProjectCard key={`project-${index}`}
+            index={index} />
+          { ...projects }/* asi se pasan todas las propiedades de todo el proyecto(project) */
+        )}
 
       </div>
     </>
