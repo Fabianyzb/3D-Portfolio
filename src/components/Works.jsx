@@ -26,6 +26,12 @@ const Works = () => {
           (Escribir algo sobre mis projects)
         </motion.p>
       </div>
+
+      <div className='mt-20 flex flex-wrap gap-7'>
+        {projects.map((project, index) =>
+          <ProjectCard key={``} />)}
+
+      </div>
     </>
   )
 }
