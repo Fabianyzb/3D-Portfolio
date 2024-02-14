@@ -1,6 +1,7 @@
 import Tilt from 'react-tilt'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
+import { github } from '../assets'
 import { SectionWrapper } from '../assets'
 import { projects } from '../constants'
 import { fadeIn, TextVariant } from '../utils/motion'
@@ -8,7 +9,7 @@ import { fadeIn, TextVariant } from '../utils/motion'
 /* pasamos los parametros de projects a la constante */
 const ProjectCard = ({ index, name, description, tags, image, source_code_Link }) => {
   return (
-    <motion.div variants={ }>
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
 
     </motion.div>
   )
@@ -41,8 +42,8 @@ const Works = () => {
         {projects.map((project, index) =>
           /* hay que loop dentro de los projects */
           <ProjectCard key={`project-${index}`}
-            index={index} />
-          { ...projects }/* asi se pasan todas las propiedades de todo el proyecto(project) */
+            index={index}
+            {...project} />/* asi se pasan todas las propiedades de todo el proyecto(project) */
         )}
 
       </div>
