@@ -5,7 +5,13 @@ import { SectionWrapper } from '../assets'
 import { projects } from '../constants'
 import { fadeIn, TextVariant } from '../utils/motion'
 
-const ProjectCard = () => {
+/* pasamos los parametros de projects a la constante */
+const ProjectCard = ({ index, name, description, tags, image, source_code_Link }) => {
+  return (
+    <motion.div variants={ }>
+
+    </motion.div>
+  )
 
 }
 
