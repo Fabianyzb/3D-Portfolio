@@ -1,4 +1,6 @@
-import React from 'react'
+import { useState, useRef } from 'react'
+import { motion } from 'framer-motion'
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
   return (
