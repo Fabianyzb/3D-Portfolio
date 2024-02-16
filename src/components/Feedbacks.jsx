@@ -1,8 +1,11 @@
+/* Esta seccion se pospone */
+
+
 /* import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { SectionWrapper } from '../hoc'
 import { fadeIn, textVariant } from '../utils/motion'
-import { testimonials } from '../constants'
+import { testimonials } from '../constants' */
 
 const Feedbacks = () => {
   return (
@@ -10,4 +13,4 @@ const Feedbacks = () => {
   )
 }
 
-export default Feedbacks */
+export default Feedbacks
