@@ -1,17 +1,38 @@
-import { Suspense, useState, useEffect } from 'react'
+import { Suspense, useState, useRef } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Points, PointMaterial, Preload } from '@react-three/drei'
 import * as random from 'maath/random/dist/maath-random.esm'
 
-const Stars = () => {
+const Stars = (props) => {
+  const ref = useRef()
+  /* Las ESTRELLAS */
+  /*Float32Array es una matriz de números de coma flotante de 32 bits. Se usa para trabajar con graficos 3D entre otras cosas */
+  const sphere = random.inSphere(new Float32Array(5000), { radius: 1.2 })
+
+  /* Rotacion de las Estrellas */
+  /* useFrame es de react three fiber y permite rotar cosas cuadro a cuadro */
+  useFrame((state, delta) => {
+    ref.current.rotation.x -= delta / 10
+    ref.current.rotation.y -= delta / 15
+  })
+
   return (
-    <div>Stars</div>
+    <group rotation={[0, 0, Math.PI / 4]}>
+      <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}> {/* frustumCulled es optimización utilizada en gráficos 3D para mejorar el rendimiento al renderizar objetos en la escena */}
+        <PointMaterial
+          transparent
+          color='#f272c8'
+          size={0.002}
+          sizeAttenuation={true}
+          depthWrite={false} />
+      </Points>
+    </group >
   )
 }
 
 const StarsCanvas = () => {
   return (
-    <div className='w-full h-full absolute inset-0 z-[-1]'>
+    <div className='w-full h-auto absolute inset-0 z-[-1]'>
       <Canvas camera={{ position: [0, 0, 1] }}>
         <Suspense fallback={null}>
           <Stars />
