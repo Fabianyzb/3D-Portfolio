@@ -5,7 +5,7 @@ import CanvasLoader from '../Loader'
 
 const Computers = ({ isMobile }) => {
     /* constante para usar el archivo GLTF */
-    const computer = useGLTF('/desktop_pc/scene.gltf')
+    const computer = useGLTF('./desktop_pc/scene.gltf')
     return (
         /* para empezar con threejs no se empieza con un "div", se empieza con un "mesh" Y dentro de ese mesh hay que anadir una luz y un objeto(primitive) */
         <mesh>
