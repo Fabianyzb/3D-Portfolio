@@ -18,13 +18,13 @@ const Contact = () => {
   /* especificar un campo vacio useRef */
   const formRef = useRef();
   /* especificar el campo useState */
-  const [form, setform] = useState({
+  const [form, setForm] = useState({
     name: '',
     email: '',
     message: '',
   })
   /* loading para cuando se este generando la forma */
-  const [loading, setloading] = useState(false)
+  const [loading, setLoading] = useState(false)
 
   /* funcionalidad */
   const handleChange = (e) => {
@@ -34,7 +34,38 @@ const Contact = () => {
     setForm({ ...form, [name]: value })
   }
 
-  const handleSubmit = (e) => { }
+  const handleSubmit = (e) => {
+    e.preventDefault(); //preventDefault para que el navegador no haga refresh
+    setLoading(true);
+
+    emailjs.send('service_46z65hj',
+      'template_i7b9l4e',
+      {
+        from_name: form.name,
+        to_name: 'Fabian',
+        from_email: form.email,
+        to_email: 'fabian.yzb@gmail.com',
+        message: form.message,
+      },
+      'Ww58BWomUm5sy8nbp'
+    )
+      /* funcion callback */
+      .then(() => {
+        setLoading(false);
+        alert('Gracias. Me pondré  en contacto contigo.');
+
+        setForm({
+          name: '',
+          email: '',
+          message: '',
+        })
+      }, (error) => {
+        setLoading(false)
+
+        console.log(error);
+        alert('Algo salió mal.')
+      })
+  }
 
 
   return (
