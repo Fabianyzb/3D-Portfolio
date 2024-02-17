@@ -27,7 +27,12 @@ const Contact = () => {
   const [loading, setloading] = useState(false)
 
   /* funcionalidad */
-  const handleChange = (e) => { }
+  const handleChange = (e) => {
+    const { name, value } = e.target; //extraer name y value de target. En lugar de hacer e.target.name y e.target.value
+
+    /* cuando tengamos lo anterior seteamos la forma */
+    setForm({ ...form, [name]: value })
+  }
 
   const handleSubmit = (e) => { }
 
