@@ -8,6 +8,11 @@ import { EarthCanvas } from './canvas'
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
 
+
+/* Parte del EMAILJS */
+// template_i7b9l4e
+
+
 const Contact = () => {
   /* especificar un campo vacio useRef */
   const formRef = useRef();
