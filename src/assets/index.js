@@ -20,6 +20,7 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import flask from "./tech/flask.png";
+import bootstrap from "./tech/bootstrap.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -52,6 +53,7 @@ export {
   typescript,
   threejs,
   flask,
+  bootstrap,
   meta,
   shopify,
   starbucks,

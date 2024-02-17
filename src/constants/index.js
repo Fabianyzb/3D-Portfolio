@@ -22,6 +22,7 @@ import {
   tripguide,
   threejs,
   flask,
+  bootstrap,
 } from "../assets";
 
 export const navLinks = [
@@ -62,6 +63,10 @@ const technologies = [
   {
     name: "CSS 3",
     icon: css,
+  },
+  {
+    name: "Bootstrap",
+    icon: bootstrap,
   },
   {
     name: "JavaScript",
