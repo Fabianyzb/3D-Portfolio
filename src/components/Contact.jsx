@@ -11,7 +11,8 @@ import { slideIn } from '../utils/motion'
 
 /* Parte del EMAILJS */
 // template_i7b9l4e
-
+// service_46z65hj
+// Public key: XH9NRFiM5EEBjtLV8Xz4J
 
 const Contact = () => {
   /* especificar un campo vacio useRef */
