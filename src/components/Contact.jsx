@@ -47,7 +47,7 @@ const Contact = () => {
         to_email: 'fabian.yzb@gmail.com',
         message: form.message,
       },
-      'Ww58BWomUm5sy8nbp'
+      'Ww58BWomUm5sy8nbp' //public key
     )
       /* funcion callback */
       .then(() => {
