@@ -53,7 +53,7 @@ const About = () => {
       </motion.p>
 
       {/* Display cards */}
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap justify-center gap-10">
         {/* Ahora vamos a loppear sobre los services donde mapearemos en cada service y su index */}
         {services.map((service, index) => (
           /* y para cada service se va a renderear un serviceCard con una key */
