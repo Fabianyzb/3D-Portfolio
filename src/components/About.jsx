@@ -49,7 +49,7 @@ const About = () => {
       >
         Lorem ipsum dolor sit amet consectetur, adipisicing elit.
         Itaque enim architecto autem obcaecati nam veniam cumque culpa ipsum.
-        Velit nam enim dignissimos sunt necessitatibus id, non neque officia facilis eveniet.
+        Velit nam enim dignissimos sunt necessitatibus id (Esccribir algo sobre mi ).
       </motion.p>
 
       {/* Display cards */}
