@@ -70,7 +70,7 @@ const Works = () => {
         <p className={styles.sectionSubText
         }>My work</p>
         <h2 className={styles.sectionHeadText}>
-          Projects.
+          Proyectos.
         </h2>
       </motion.div>
 
@@ -81,7 +81,6 @@ const Works = () => {
         >
           Lorem ipsum dolor, sit amet consectetur adipisicing elit.
           Ipsam quaerat aut in tempore amet voluptate ipsum maxime.
-          (Escribir algo sobre mis projects)
         </motion.p>
       </div>
 
