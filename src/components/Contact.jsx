@@ -118,7 +118,7 @@ const Contact = () => {
 
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>
-              Your Message
+              Tu Mensaje
             </span>
 
             <textarea
@@ -126,7 +126,7 @@ const Contact = () => {
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder='What do you want to say?'
+              placeholder='Que quieres decir?'
               className='bg-tertiary py-4 px-6 placeholder:text-secondary
               text-white rounded-lg outlined-none border-none font-medium'
             />
