@@ -27,7 +27,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
             <div
-              onClick={() => window.open(source_code_link, '_blank')}
+              onClick={() => window.open('https://github.com/Fabianyzb/3D-Portfolio', '_blank')} /* LINK PARA EL GITHUB */
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img
