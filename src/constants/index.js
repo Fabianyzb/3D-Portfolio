@@ -216,7 +216,7 @@ const projects = [
       },
     ],
     image: calculator,
-    source_code_link: "https://github.com/Fabianyzb/how-old-r-u",
+    source_code_link: "https://fabianyzb.github.io/super-simple-website/",
   },
 ];
 
