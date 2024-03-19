@@ -27,8 +27,8 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
+import battleship from "./battleship.png";
+import metty from "./metty.png";
 import calculator from "./calculator.png";
 
 export {
@@ -58,7 +58,7 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
+  battleship,
+  metty,
   calculator,
 };

@@ -17,8 +17,8 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
+  battleship,
+  metty,
   calculator,
   threejs,
   flask,
@@ -174,7 +174,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: metty,
     source_code_link: "https://github.com/Fabianyzb/Metty_",
   },
   {
@@ -195,7 +195,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: battleship,
     source_code_link: "https://github.com/Fabianyzb/Battleship-ReactJs",
   },
   {
@@ -203,15 +203,15 @@ const projects = [
     description: "Una simple calculadora de edad. Bien kawaii",
     tags: [
       {
-        name: "nextjs",
+        name: "javascript",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "css",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "html",
         color: "pink-text-gradient",
       },
     ],
