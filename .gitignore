@@ -28,4 +28,4 @@ dist-ssr
 .vscode/
 
 /src/components/canvas/Contact.jsx
-/src/components/canvas/Works.jsx
+/src/components/canvas/Experience.jsx
