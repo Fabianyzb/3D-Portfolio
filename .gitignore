@@ -27,5 +27,6 @@ dist-ssr
 #Peacock
 .vscode/
 
+#Components
 /src/components/canvas/Contact.jsx
 /src/components/canvas/Experience.jsx
