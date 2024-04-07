@@ -18,7 +18,6 @@ export {
   Navbar,
   About,
   Tech,
-  Experience,
   Works,
   Feedbacks,
   Contact,
