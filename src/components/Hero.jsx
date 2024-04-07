@@ -16,8 +16,8 @@ const Hero = () => {
         <div>
           <h1 className={` ${styles.heroHeadText} text-white `}>Hola, soy  <span className='text-[#915eff]'>Fabian</span></h1>
           <p className={` ${styles.heroSubText} mt-2 text-white-100`}>
-            Desarrollo  <br className='sm:block hidden' />
-            aplicaciones web y me gusta automatizar cosas con python.
+            Bienvenid@ a mi portafolio.  <br className='sm:block hidden' />
+            Fue creado con React.js y Three.js
           </p>
         </div>
       </div>
