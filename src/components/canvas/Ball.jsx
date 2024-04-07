@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { Decal, Float, OrbitControls, Preload, useTexture } from '@react-three/drei';
-import CanvasLoader from '../Loader';
+import CanvasLoader from '../Loader'; //carga los porcentajes
 
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
@@ -35,6 +35,8 @@ const BallCanvas = ({ icon }) => {
     <Canvas
       frameloop='demand'
       gl={{ preserveDrawingBuffer: true }}
+      style={{ width: '15vw', height: '15vh' }} // Ajusta el tamaño del lienzo al tamaño de la ventana
+      camera={{ fov: 75, aspect: window.innerWidth / window.innerHeight, near: 0.1, far: 50 }} // Ajusta la cámara
     >
       {/* Suspense es una característica de React que permite que haya un loader mientras se está cargando el modelo */}
       <Suspense fallback={<CanvasLoader />}>
