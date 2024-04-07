@@ -47,9 +47,11 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] 
         max-w-3xl leading-[30px]"
       >
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Itaque enim architecto autem obcaecati nam veniam cumque culpa ipsum.
-        Velit nam enim dignissimos sunt necessitatibus id (Esccribir algo sobre mi ).
+        ¡Hola! Soy un desarrollador de software con un enfoque en el diseño y
+        desarrollo de soluciones innovadoras y efectivas para satisfacer las necesidades de mis clientes.
+        Mi experiencia incluye el desarrollo de aplicaciones web, aplicaciones móviles, y sistemas de gestión de contenido.
+        Mi objetivo es proporcionar soluciones tecnológicas de alta calidad que ayuden a las empresas a crecer y prosperar.
+        Estoy entusiasmado por tomar nuevos desafíos y contribuir al éxito de proyectos innovadores.
       </motion.p>
 
       {/* Display cards */}
