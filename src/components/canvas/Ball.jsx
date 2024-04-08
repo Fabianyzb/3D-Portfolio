@@ -1,16 +1,24 @@
 import React, { Suspense } from 'react';
-import { Canvas } from '@react-three/fiber';
+import { Canvas, useFrame } from '@react-three/fiber';
 import { Decal, Float, OrbitControls, Preload, useTexture } from '@react-three/drei';
-import CanvasLoader from '../Loader'; //carga los porcentajes
+import CanvasLoader from '../Loader'; // Carga los porcentajes
 
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
+
+  // Usamos useFrame para actualizar la rotación de la bola en cada cuadro de animación
+  useFrame((state, delta) => {
+    // Modificamos la rotación de la bola agregando un pequeño valor de rotación en cada cuadro
+    props.meshRef.current.rotation.x += 0.01 * delta; // Rotación en el eje X
+    props.meshRef.current.rotation.y += 0.01 * delta; // Rotación en el eje Y
+    props.meshRef.current.rotation.z += 0.01 * delta; // Rotación en el eje Z
+  });
 
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
       <ambientLight intensity={0.25} />
       <directionalLight position={[0, 0, 0.05]} />
-      <mesh castShadow receiveShadow scale={2.75}>
+      <mesh ref={props.meshRef} castShadow receiveShadow scale={2.75}>
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
           color='#fff8eb'
@@ -31,6 +39,8 @@ const Ball = (props) => {
 };
 
 const BallCanvas = ({ icon }) => {
+  const meshRef = React.useRef(); // Ref para la bola
+
   return (
     <Canvas
       frameloop='demand'
@@ -42,7 +52,7 @@ const BallCanvas = ({ icon }) => {
       <Suspense fallback={<CanvasLoader />}>
         {/* OrbitControls permite mover el modelo con el ratón. Sin zoom, y solo se puede rotar el objeto desde un ángulo determinado, en este caso de izquierda y derecha. */}
         <OrbitControls enableZoom={false} />
-        <Ball imgUrl={icon} />
+        <Ball imgUrl={icon} meshRef={meshRef} />
       </Suspense>
 
       <Preload all />
