@@ -68,7 +68,7 @@ const Works = () => {
     <>
       <motion.div variants={textVariant()}> {/* Esto hara que las etiquetas p sean animadas */}
         <p className={styles.sectionSubText
-        }>My work</p>
+        }>Lo que he hecho</p>
         <h2 className={styles.sectionHeadText}>
           Proyectos.
         </h2>
