@@ -18,7 +18,7 @@ Este es un proyecto de portafolio personal desarrollado con React y Three.js, qu
 
 ## Demo
 
-Puedes ver una demostración en línea del proyecto [aquí](#).
+Puedes ver una demostración en línea del proyecto [aquí](https://lively-kleicha-d99015.netlify.app/).
 
 
 
