@@ -20,27 +20,8 @@ Este es un proyecto de portafolio personal desarrollado con React y Three.js, qu
 
 Puedes ver una demostración en línea del proyecto [aquí](#).
 
-## Instalación
 
-1. Clona este repositorio:
-git clone https://github.com/Fabianyzb/3D-Portfolio-React-ThreeJs.git
 
-2. Instala las dependencias:
-cd 3D-Portfolio-React-ThreeJs
-npm install
-
-3. Ejecuta el servidor de desarrollo local:
-npm run dev
-
-4. Abre http://localhost:5173 en tu navegador para ver el resultado.
-
-## Contribuciones
-
-Las contribuciones son bienvenidas. Si tienes alguna idea para mejorar este proyecto, no dudes en abrir un problema o enviar una solicitud de extracción.
-
-##Licencia
-
-Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para obtener más detalles.
 
 
 
