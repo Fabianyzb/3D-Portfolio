@@ -79,8 +79,8 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading=[30px]'
         >
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Ipsam quaerat aut in tempore amet voluptate ipsum maxime.
+          Cada proyecto fue una oportunidad para aplicar mis conocimientos y habilidades, y para seguir aprendiendo y mejorando.
+          Si te interesa conocer más sobre mi trabajo, puedes hacer clic en cada imagen para ver el repositorio en GitHub, donde encontrarás más detalles sobre el desarrollo y la implementación de cada proyecto.
         </motion.p>
       </div>
 
