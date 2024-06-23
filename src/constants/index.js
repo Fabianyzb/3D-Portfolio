@@ -19,7 +19,7 @@ import {
   shopify,
   battleship,
   metty,
-  calculator,
+  Travelapp,
   threejs,
   flask,
   bootstrap,
@@ -199,24 +199,25 @@ const projects = [
     source_code_link: "https://github.com/Fabianyzb/Battleship-ReactJs",
   },
   {
-    name: "Calculadora de edad",
-    description: "Una simple calculadora de edad. Bien kawaii",
+    name: "App Viajero",
+    description:
+      "Frontend de una app para excursionistas, mochileros y aventureros.",
     tags: [
       {
-        name: "javascript",
+        name: "Next.js 14",
         color: "blue-text-gradient",
       },
       {
-        name: "css",
+        name: "Typescript",
         color: "green-text-gradient",
       },
       {
-        name: "html",
+        name: "TailwindCss",
         color: "pink-text-gradient",
       },
     ],
-    image: calculator,
-    source_code_link: "https://fabianyzb.github.io/super-simple-website/",
+    image: Travelapp,
+    source_code_link: "https://github.com/Fabianyzb/Travel-app",
   },
 ];
 

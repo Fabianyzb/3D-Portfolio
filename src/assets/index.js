@@ -29,7 +29,7 @@ import tesla from "./company/tesla.png";
 
 import battleship from "./battleship.png";
 import metty from "./metty.png";
-import calculator from "./calculator.png";
+import Travelapp from "./Travelappscreenshot.png";
 
 export {
   logo,
@@ -60,5 +60,5 @@ export {
   tesla,
   battleship,
   metty,
-  calculator,
+  Travelapp,
 };
