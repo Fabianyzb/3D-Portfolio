@@ -5,7 +5,7 @@ import CanvasLoader from '../Loader'
 
 const Computers = ({ isMobile }) => {
     /* constante para usar el archivo GLTF */
-    const computer = useGLTF('./desktop_pc/scene.gltf')
+    const computer = useGLTF('./desktop_pc/myavatar.glb')
     return (
         /* para empezar con threejs no se empieza con un "div", se empieza con un "mesh" Y dentro de ese mesh hay que anadir una luz y un objeto(primitive) */
         <mesh>
@@ -22,7 +22,7 @@ const Computers = ({ isMobile }) => {
                 shadow-mapSize={1024} />
             <primitive
                 object={computer.scene}
-                scale={isMobile ? 0.7 : 0.75}
+                scale={isMobile ? 1.0 : 1.2}
                 position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
                 rotation={[-0.01, -0.2, -0.1]} />
         </mesh>
