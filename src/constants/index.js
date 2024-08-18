@@ -23,6 +23,7 @@ import {
   threejs,
   flask,
   bootstrap,
+  python,
 } from "../assets";
 
 export const navLinks = [
@@ -42,16 +43,52 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
+    title: "HTML 5",
+    icon: html,
   },
   {
-    title: "React Developer",
-    icon: mobile,
+    title: "CSS 3",
+    icon: css,
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "Bootstrap",
+    icon: bootstrap,
+  },
+  {
+    title: "JavaScript",
+    icon: javascript,
+  },
+  {
+    title: "Typescript",
+    icon: typescript,
+  },
+  {
+    title: "React JS",
+    icon: reactjs,
+  },
+  {
+    title: "Tailwind CSS",
+    icon: tailwind,
+  },
+  {
+    title: "Node JS",
+    icon: nodejs,
+  },
+  {
+    title: "Three JS",
+    icon: threejs,
+  },
+  {
+    title: "Git",
+    icon: git,
+  },
+  {
+    title: "Figma",
+    icon: figma,
+  },
+  {
+    title: "Python",
+    icon: python,
   },
 ];
 
@@ -107,6 +144,10 @@ const technologies = [
   {
     name: "flask",
     icon: flask,
+  },
+  {
+    name: "python",
+    icon: python,
   },
 ];
 
