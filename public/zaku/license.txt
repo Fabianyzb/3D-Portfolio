@@ -1,8 +1,0 @@
-Model Information:
-* title:	MS-06S Zaku-II Commander
-* source:	https://sketchfab.com/3d-models/ms-06s-zaku-ii-commander-1b0ceb8b438942ec98c1536a51a6647b
-* author:	Tigerar1 (https://sketchfab.com/allanromanreyes)
-
-Model License:
-* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
-* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
