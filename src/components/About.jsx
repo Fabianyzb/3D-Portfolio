@@ -19,7 +19,7 @@ const ServiceCard = ({ index, title, icon }) => {
             scale: 1,
             speed: 1000
           }}
-          className="bg-white rounded-[20px] py-5 px-12
+          className="bg-tertiary rounded-[20px] py-5 px-12
           min-h-[165px] flex justify-evenly items-center flex-col"> {/* tamano de cartas */}
           <img src={icon} alt={title}
             className="w-16 h-16 object-contain" />
