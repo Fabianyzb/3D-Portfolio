@@ -47,11 +47,10 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] 
         max-w-3xl leading-[30px]"
       >
-        ¡Hola! Soy un desarrollador de software con un enfoque en el diseño y
-        desarrollo de soluciones innovadoras y efectivas para satisfacer las necesidades de mis clientes.
-        Mi experiencia incluye el desarrollo de aplicaciones web, aplicaciones móviles, y sistemas de gestión de contenido.
-        Mi objetivo es proporcionar soluciones tecnológicas de alta calidad que ayuden a las empresas a crecer y prosperar.
-        Estoy entusiasmado por tomar nuevos desafíos y contribuir al éxito de proyectos innovadores.
+        ¡Hola! Soy un estudiante y desarrollador de software que está aprendiendo constantemente.
+        Mis áreas de interés incluyen el diseño y el desarrollo de soluciones innovadoras y efectivas que puedan satisfacer las necesidades de cualquier persona que las utilice.
+        Mis conocimientos abarcan el desarrollo de aplicaciones web, aplicaciones móviles y sistemas de gestión de contenido.
+        Aprendo rápidamente y disfruto el desafío de encontrar soluciones creativas y eficientes para los problemas técnicos.
       </motion.p>
 
       {/* Display cards */}
